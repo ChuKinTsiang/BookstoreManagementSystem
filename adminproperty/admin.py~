@@ -7,7 +7,7 @@ class AdminPropertyAdmin(admin.ModelAdmin):
     list_display = ('admin', 'first_name', 'last_name','gender', 'age', 'display_birthday','email', )
     search_fields = ('username', 'first_name', 'last_name','email')
     list_filter = ('groups',)
-    exclude = ('username', 'password', 'is_staff', 'is_active', 'last_login', 'date_joined', 'groups', 'user_permissions', 'is_superuser')
+    #exclude = ('username', 'password', 'is_staff', 'is_active', 'last_login', 'date_joined', 'groups', 'user_permissions', 'is_superuser')
 
     def has_add_permission(self, *args, **kwargs):
         return False
