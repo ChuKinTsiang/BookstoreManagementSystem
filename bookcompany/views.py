@@ -253,6 +253,8 @@ def book(request):
 
     return render_to_response("book.html",locals())
 
+	
+
 def account(request):
     t = loader.get_template('account.html')
     start_time = request.GET.get('start_time')
